@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="525.0" prefWidth="403.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="calcButton" disable="true" layoutX="11.0" layoutY="148.0" mnemonicParsing="false" onAction="#calcPressed" text="Calculate" visible="true" />
+    <TextArea fx:id="rnaTextArea" layoutX="14.0" layoutY="14.0" prefHeight="95.0" prefWidth="375.0" promptText="RNA Sequence Here" wrapText="true" />
+    <Label layoutX="15.0" layoutY="176.0" prefHeight="21.0" prefWidth="55.0" text="RESULTS" />
+    <Label layoutX="22.0" layoutY="200.0" text="Atomic Mass:" />
+    <Label layoutX="21.0" layoutY="229.0" text="Protein Codes:" />
+    <Label layoutX="21.0" layoutY="257.0" text="Linear Length:" />
+    <Label layoutX="21.0" layoutY="286.0" text="Result 1d" />
+    <Label fx:id="atomiclbl" layoutX="106.0" layoutY="200.0" prefWidth="200.0" />
+    <Label fx:id="aminolbl" layoutX="106.0" layoutY="229.0" prefWidth="200.0" />
+    <TextField id="resD" layoutX="84.0" layoutY="283.0" prefWidth="200.0" />
+    <Label layoutX="14.0" layoutY="109.0" prefWidth="84.0" text="# of Characters:" />
+    <Label fx:id="numCharslbl" layoutX="106.0" layoutY="109.0" prefWidth="283.0" text="0" />
+    <Label fx:id="linearlbl" layoutX="106.0" layoutY="257.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>
