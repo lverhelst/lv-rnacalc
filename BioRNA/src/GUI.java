@@ -42,7 +42,7 @@ public class GUI extends Application implements Initializable{
 	private Label atomiclbl;
 	
 	@FXML
-	private Label aminolbl; //fx:id=numCharslbl,atomiclbl,aminolbl
+	private TextArea aminotxt; //fx:id=numCharslbl,atomiclbl,aminolbl
 	
 	
 	//Bio to run calculations
@@ -79,7 +79,7 @@ public class GUI extends Application implements Initializable{
 		assert rnaTextArea != null : "fx:id=\"runTextArea\" was not injected";
 		assert numCharslbl != null : "fx:id=\"numCharslbl\" was not injected";
 		assert atomiclbl != null : "fx:id=\"atomiclbl\" was not injected";
-		assert aminolbl != null : "fx:id=\"aminolbl\" was not injected";
+		assert aminotxt != null : "fx:id=\"aminotxt\" was not injected";
 		
 		// initialize your logic here: all @FXML variables will have been injected
         // reset visibility and opacity of nodes - useful if you left your FXML in a 'bad' states 
@@ -93,7 +93,7 @@ public class GUI extends Application implements Initializable{
 		
 		String rnaString = rnaTextArea.getText();
 		atomiclbl.setText(bioCalc.getDNAmass(rnaString));
-		aminolbl.setText(bioCalc.translate(rnaString));
+		aminotxt.setText(bioCalc.translate(rnaString));
 		linearlbl.setText(bioCalc.getRNALinearLength(rnaString));
 		
 	}
